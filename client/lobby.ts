@@ -953,23 +953,23 @@ export function lobbyView(model: PyChessModel): VNode[] {
 //                      h('time', '2022.01.01'),
 //              
 //              ]),
-//              h('a.post', { attrs: {href: '/news/Liantichess'} }, [
-//                  h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
-//                  h('span.text', [
-//                      h('strong', "Liantichess"),
-//                      h('span', 'I really appreciate everyone who offered to help, donated, reported a bug or made me aware of some possible improvements.'),
-//                    ]),
-//                  h('time', '2021.12.17'),
-//              ]),
-//              h('posts', [
-//                  // TODO: create news documents in mongodb and load latest 3 dinamically here
-//                  h('a.post', { attrs: {href: '/news/Nookie_wins_the_First_Antichess960_Shield_Arena'} }, [
-//                      h('img', { attrs: {src: model["asset-url"] + '/images/titled_arena.png'} }),
-//                      h('span.text', [
-//                          h('strong', "Nookie wins the First Antichess960 Shield Arena"),
-//                          h('span', 'First Antichess960 Shield Arena'),
-//                      ]),
-//                      h('time', '2021.12.17'),
+               h('a.post', { attrs: {href: '/news/Liatomic'} }, [
+                   h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
+                   h('span.text', [
+                       h('strong', "Liantichess"),
+                       h('span', 'the start of Liatomic'),
+                     ]),
+                   h('time', '2022.01.04'),
+               ]),
+               h('posts', [
+                   // TODO: create news documents in mongodb and load latest 3 dinamically here
+//                 h('a.post', { attrs: {href: '/news/Nookie_wins_the_First_Antichess960_Shield_Arena'} }, [
+//                     h('img', { attrs: {src: model["asset-url"] + '/images/titled_arena.png'} }),
+//                     h('span.text', [
+//                         h('strong', "Nookie wins the First Antichess960 Shield Arena"),
+//                         h('span', 'First Antichess960 Shield Arena'),
+//                     ]),
+//                     h('time', '2021.12.17'),
                  	    /*   
                 ]),
                 h('a.post', { attrs: {href: '/news/Shinobi_Arrives_in_Time_For_the_Sakura_Blossoms'} }, [
