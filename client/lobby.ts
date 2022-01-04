@@ -956,7 +956,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
                h('a.post', { attrs: {href: '/news/Liatomic'} }, [
                    h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
                    h('span.text', [
-                       h('strong', "Liantichess"),
+                       h('strong', "Liatomic"),
                        h('span', 'the start of Liatomic'),
                      ]),
                    h('time', '2022.01.04'),
