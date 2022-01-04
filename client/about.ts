@@ -10,7 +10,7 @@ export function aboutView(): VNode[] {
     ]
     return [
         h('div.about', [
-            h('img.center', { attrs: { src: `${model["asset-url"]}/favicon/favicon.png` } }),
+            h('img.center', { attrs: { src: `${model["asset-url"]}/favicon/static/favicon/istockphoto-1132090957-612x612.jpg` } }),
             h('h1', { attrs: { align: 'center' } }, _('About Liatomic')),
             h('p', _('Liatomic is a free, open-source atomic server derived from Liantichess.')),
             h('p', [
