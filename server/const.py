@@ -43,10 +43,8 @@ GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi")
 CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC w KQkq - 0 1"
 
 VARIANTS = (
-    "antichess",
-    "antichess960",
-    "losers",
-    "losers960"
+    "atomic",
+    "atomic960"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
