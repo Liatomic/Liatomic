@@ -6,24 +6,24 @@ import { model } from './main';
 
 export function aboutView(): VNode[] {
     const untitled = [
-        _("\Many Thanks to gbtami and pychess developers to derive this project."),
+        _("\Many Thanks to srimethan and Liantichess developers to derive this project."),
     ]
     return [
         h('div.about', [
             h('img.center', { attrs: { src: `${model["asset-url"]}/favicon/favicon.png` } }),
-            h('h1', { attrs: { align: 'center' } }, _('About Liantichess')),
-            h('p', _('Liantichess is a free, open-source antichess server derived from pychess.')),
+            h('h1', { attrs: { align: 'center' } }, _('About Liatomic')),
+            h('p', _('Liatomic is a free, open-source atomic server derived from Liantichess.')),
             h('p', [
                 // TODO Automate the generation of this list
                 _("Currently supported games are "),
-                h('a', { attrs: { href: 'https://liantichess.herokuapp.com/variants/antichess' } }, 'Antichess'),
+                h('a', { attrs: { href: 'https://liatomic.herokuapp.com/variants/atomic' } }, 'Atomic'),
                 ", ",
-                h('a', { attrs: { href: 'https://liantichess.herokuapp.com/variants/antichess960' } }, 'Antichess960'),
+                h('a', { attrs: { href: 'https://liatomic.herokuapp.com/variants/atomic960' } }, 'Atomic960'),
                 ", ",
 
             h('hr'),
             h('p', [
-                _('To play on Liantichess, you need to have an open and unmarked account on Lichess. '),
+                _('To play on Liatomic, you need to have an open and unmarked account on Lichess. '),
                 _('Regarding Privacy and Terms of Service, the rules of lichess.org are also applied here. '),
                 h('a', { attrs: { href: 'https://lichess.org/privacy' } }, 'Privacy'),
                 ", ",
