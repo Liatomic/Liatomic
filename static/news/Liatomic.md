@@ -4,7 +4,7 @@
     <div class= "meta">
         <span class="text">2022.01.04</span>
         <span class="text"><a href="/@/RaviharaV">@RaviharaV</a></span>
-        <span class="text">Liantichess</span>
+        <span class="text">Liatomic</span>
     </div>
     <div class= "headline">Start of the Liatomic.</div>
 </div>
