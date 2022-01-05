@@ -942,17 +942,17 @@ export function lobbyView(model: PyChessModel): VNode[] {
                 h('icon', { attrs: {"data-icon": '2'} }),
                 h('a.reflist', { attrs: {href: '/news'} }, _("Latest updates")),
             ]),
-                h('posts', [
+//                h('posts', [
                 // TODO: create news documents in mongodb and load latest 3 dinamically here
-                    h('a.post', { attrs: {href: '/news/1statomicshield'} }, [
-                        h('img', { attrs: {src: model["asset-url"] + '/images/1stshield.png'} }),
-                        h('span.text', [
-                            h('strong', "DominantLouse-wins-the-1st-atomic shield-arena"),
-                            h('span', 'first atomic shield on liatomic'),
-                        ]),
-                        h('time', '2022.01.05'),
+//                    h('a.post', { attrs: {href: '/news/1statomicshield'} }, [
+//                        h('img', { attrs: {src: model["asset-url"] + '/images/1stshield.png'} }),
+//                        h('span.text', [
+//                            h('strong', "DominantLouse-wins-the-1st-atomic shield-arena"),
+//                            h('span', 'first atomic shield on liatomic'),
+//                        ]),
+//                        h('time', '2022.01.05'),
                 
-                ]),
+//                ]),
                 h('a.post', { attrs: {href: '/news/Liatomic'} }, [
                     h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
                     h('span.text', [
