@@ -929,6 +929,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
         h('under-left', [
             h('a.reflist', { attrs: { href: 'https://discord.gg/5m4VyS3U' } }, 'Discord'),
             h('a.reflist', { attrs: { href: 'https://github.com/raviharav-bot/Liantichess' } }, 'Github'),
+	    h('a.reflist', { attrs: { href: 'https://lichess.org/team/liatomic' } }, 'Lichess Team'), 	
             h('a.reflist', { attrs: { href: '/faq' } }, _("FAQ")),
             h('a.reflist', { attrs: { href: '/stats' } }, _("Stats")),
             h('a.reflist', { attrs: { href: '/about' } }, _("About")),
@@ -940,7 +941,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
         h('under-lobby', [
             h('news-latest', [
                 h('icon', { attrs: {"data-icon": '2'} }),
-                h('a.reflist', { attrs: {href: '/news'} }, _("Latest updates")),
+                h('a.reflist', { attrs: {href: '/static/news'} }, _("Latest updates")),
             ]),
 //                h('posts', [
                 // TODO: create news documents in mongodb and load latest 3 dinamically here
@@ -953,7 +954,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
 //                        h('time', '2022.01.05'),
                 
 //                ]),
-                h('a.post', { attrs: {href: '/news/Liatomic'} }, [
+                h('a.post', { attrs: {href: '/static/news/Liatomic'} }, [
                     h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
                     h('span.text', [
                         h('strong', "Liatomic"),
