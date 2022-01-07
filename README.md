@@ -42,3 +42,21 @@ yarn md                                 // Compile md files to html
 ```
 python3 server/server.py
 ```
+
+## Open in GitPod
+
+GitPod lets you configure one off initializing tasks and tasks that should be run on each startup.
+
+The project comes with the necessary GitPod config files that instruct GitPod to install dependencies for the first time, and on every startup start MongoDb and the dev server.
+
+You can open the repo in GitPoe by attaching the repo url to `https://gitpod.io/#`. For this concrete fork the url would be:
+
+[https://gitpod.io/#https://github.com/easychessanimations/Liantichess](https://gitpod.io/#https://github.com/easychessanimations/Liantichess)
+
+For the first time the server won't start as the installation will be still ongoing. So wait for the installation to finish and in the `Run Server` terminal tab type `. startserver.sh` or simply bring back this command with the up arrow and now the server will start ok.
+
+You can also set the server URI in https://gitpod.io/variables, Create a variable `LIATOMIC_URI` and set it to the web page url as opened by GitPod for the server, without the trailing slash and change protocol to `http`. The startserver script will export this variable as `URI` so that redirect for oauth will be correct.
+
+Example `LIATOMIC_URL`:
+
+`http://8080-amber-reindeer-qu3afegt.ws-eu25.gitpod.io`
