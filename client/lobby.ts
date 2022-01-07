@@ -941,6 +941,6 @@ export function lobbyView(model: PyChessModel): VNode[] {
         h('under-lobby', [
             h('lichess top rated atomic tv', [
                 h('icon', { attrs: {"data-icon": '2'} }),
-                h('a.reflist', { attrs: {href: '/blog'} }, _("lichess top rated atomic tv")),
+                h('a.reflist', { attrs: {href: '/litv'} }, _("lichess top rated atomic tv")),
             ]),
          <iframe src="https://lichess.org/tv/atomic/frame?theme=brown&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
