@@ -16,6 +16,7 @@ tournament*.json
 yarn.lock
 /*.py
 /*.sh
+!install.sh
 *.pgn
 *.txt
 *.mo
