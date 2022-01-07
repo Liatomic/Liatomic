@@ -938,9 +938,3 @@ export function lobbyView(model: PyChessModel): VNode[] {
             h('a', { attrs: { href: '/players' } }, [ h('counter#u_cnt') ]),
             h('a', { attrs: { href: '/games' } }, [ h('counter#g_cnt') ]),
         ]),
-        h('under-lobby', [
-            h('lichess top rated atomic tv', [
-                h('icon', { attrs: {"data-icon": '2'} }),
-                h('a.reflist', { attrs: {href: '/litv'} }, _("lichess top rated atomic tv")),
-            ]),
-         <iframe src="https://lichess.org/tv/atomic/frame?theme=brown&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
