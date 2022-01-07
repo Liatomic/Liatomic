@@ -15,7 +15,7 @@
 
 Hello guys,
 
-This is the start of liantichess :)
+This is the start of liatomic :)
 
 first of all very very thanks to SriMethan for helping me to make Liatomic and Liatomic is based on Liantichess.In here you can play atomic and atomic 960 and you can claim your atomic title as follows
 ASGM - if you ever had rating more than 2400
