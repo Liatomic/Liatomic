@@ -938,35 +938,4 @@ export function lobbyView(model: PyChessModel): VNode[] {
             h('a', { attrs: { href: '/players' } }, [ h('counter#u_cnt') ]),
             h('a', { attrs: { href: '/games' } }, [ h('counter#g_cnt') ]),
         ]),
-        h('under-lobby', [
-            h('news-latest', [
-                h('icon', { attrs: {"data-icon": '2'} }),
-                h('a.reflist', { attrs: {href: '/static/news'} }, _("Latest updates")),
-            ]),
-//                h('posts', [
-                // TODO: create news documents in mongodb and load latest 3 dinamically here
-//                    h('a.post', { attrs: {href: '/news/1statomicshield'} }, [
-//                        h('img', { attrs: {src: model["asset-url"] + '/images/1stshield.png'} }),
-//                        h('span.text', [
-//                            h('strong', "DominantLouse-wins-the-1st-atomic shield-arena"),
-//                            h('span', 'first atomic shield on liatomic'),
-//                        ]),
-//                        h('time', '2022.01.05'),
-                
-//                ]),
-                h('a.post', { attrs: {href: '/static/news/Liatomic'} }, [
-                    h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
-                    h('span.text', [
-                        h('strong', "Liatomic"),
-                        h('span', 'the start of liatomic.'),
-                    ]),
-                    h('time', '2022.01.04'),
-                ])
-                    // TODO: create news documents in mongodb and load latest 3 dinamically here
-//                    h('a.post', { attrs: {href: '/news/Nookie_wins_the_First_Antichess960_Shield_Arena'} }, [
-//                        h('img', { attrs: {src: model["asset-url"] + '/images/titled_arena.png'} }),
-//                        h('span.text', [
-//                            h('strong', "Nookie wins the First Antichess960 Shield Arena"),
-//                            h('span', 'First Antichess960 Shield Arena'),
-//                        ]),
-//                        h('time', '2021.12.17'),
+
