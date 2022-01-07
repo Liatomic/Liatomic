@@ -4,11 +4,11 @@
 
 <details><summary>What is Liatomic?</summary>
 
-Liatomic is a website dedicated to to play antichess and antichess960. Derived From Pychess and Credits to Gbtami .</details>
+Liatomic is a website dedicated to to play antichess and antichess960. Derived From Liatomic and Credits to SriMethan .</details>
 
 <details><summary>Why is it called Liatomic?</summary>
 
-this will be available froever liatomic means li(libre)atomic.</details>
+this will be available forever liatomic means li(libre)atomic.</details>
 
 <details><summary>What is the relationship to [Lichess](https://lichess.org/)?</summary>
 
