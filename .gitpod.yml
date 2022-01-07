@@ -1,6 +1,8 @@
 image:
   file: Dockerfile
 tasks:
+  - name: Install Dependencies
+    init: . install.sh
   - name: Run MongoDb
     command: mongod
   - name: Run Server
