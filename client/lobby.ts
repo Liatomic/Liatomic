@@ -941,7 +941,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
         h('under-lobby', [
             h('news-latest', [
                 h('icon', { attrs: {"data-icon": '2'} }),
-                h('a.reflist', { attrs: {href: '/news'} }, _("Latest updates")),
+                h('a.reflist', { attrs: {href: '/blog'} }, _("Latest updates")),
             ]),
                 h('posts', [
                 // TODO: create news documents in mongodb and load latest 3 dinamically here
@@ -954,7 +954,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
                 //        h('time', '2022.01.01'),
                 
                 //]),
-                h('a.post', { attrs: {href: '/news/Liatomic'} }, [
+                h('a.post', { attrs: {href: '/blog/liatomic'} }, [
                     h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
                     h('span.text', [
                         h('strong', "Liatomic"),
@@ -1014,7 +1014,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
                     h('time', '2021.02.04'),
                 ]),
                 */ 
-            ]),
-        ]),
+           // ]),
+       // ]),
     ];
 } 
