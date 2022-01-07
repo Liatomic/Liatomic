@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-## Liantichess
+## Liatomic
 
 <details><summary>What is Liatomic?</summary>
 
