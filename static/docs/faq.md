@@ -4,7 +4,7 @@
 
 <details><summary>What is Liatomic?</summary>
 
-Liatomic is a website dedicated to to play atomic and atomic960. Derived From Liatomic and Credits to SriMethan .</details>
+Liatomic is a website dedicated to to play atomic and atomic960. Derived From Liantichess and Credits to SriMethan .</details>
 
 <details><summary>Why is it called Liatomic?</summary>
 
