@@ -6,4 +6,4 @@ tasks:
   - name: Run MongoDb
     command: mongod
   - name: Run Server
-    command: python3 server/server.py
+    command: . startserver.sh
