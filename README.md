@@ -1,8 +1,8 @@
 [![Nodejs-CI](https://github.com/SriMethan/Liantichess/actions/workflows/nodejs.yml/badge.svg)](https://github.com/SriMethan/Liantichess/actions/workflows/nodejs.yml)
 
-## Liantichess
+## Liatomic
 
-Liantichess is a free, open-source antichess server designed to play antichess variants.
+Liatomic is a free, open-source antichess server designed to play antichess variants.
 
 Currently supported games are:
 
@@ -83,9 +83,9 @@ In Heroku UI set config var `URI` to the app url without trailing slash ( `http:
 ### How to give titles to players
 go to your mongodb database page and click on browse Collections
 ![Screenshot 2022-01-08 152659](https://user-images.githubusercontent.com/91451271/148640036-7fb953a9-0286-4248-9e05-616ef4c90a2a.png)
-now click on user
-now click edit icon on the players name that you want to add title 
-now add title:"the title you want to give" example title:"AGM"
-now click on update document
-now go to your heroku page and restart all dynos 
-done!
+- now click on user
+- now click edit icon on the players name that you want to add title 
+- now add title:"the title you want to give" example title:"AGM"
+- now click on update document
+- now go to your heroku page and restart all dynos 
+ **done!**
