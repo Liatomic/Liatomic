@@ -6,8 +6,8 @@ Liantichess is a free, open-source antichess server designed to play antichess v
 
 Currently supported games are:
 
-- [Antichess](https://liantichess.herokuapp.com/variants/antichess)
-- [Antichess960](https://liantichess.herokuapp.com/variants/antichess960)
+- [Atomic](https://liatomic.herokuapp.com/variants/atomic)
+- [Atomic960](https://liatomic.herokuapp.com/variants/atomic960)
 
 Additionally you can check Chess960 option in for Antichess
 [Chess960 castling rules](https://en.wikipedia.org/wiki/Chess960#Castling_rules)
@@ -22,7 +22,7 @@ On client side it is based on
 
 ##
 
-liantichess is a free server and it will remain free forever.
+liatomic is a free server and it will remain free forever.
 
 ## Installation
 
@@ -71,3 +71,21 @@ heroku buildpacks:add --index 1 heroku/nodejs --app atomiconly
 ```
 
 In Heroku UI set config var `URI` to the app url without trailing slash ( `http://atomiconly.herokuapp.com` in our case ) and set `MONGO_HOST` to a MongoDb connect URI that has credentials included.
+
+### Heroku config vars
+`URI` set it to your app url example: http://atomiconly.herokuapp.com
+`MONGO_HOST` set it to your mongo database url
+`DEV` set it false to remove dev
+`FERNET_KEY` setup this if you want fishnet
+`ADMINS` set it to names of the players that you want to make tournaments  example:Raviharav SriMethan
+`TOURNAMENT_DIRECTORS` set it to the names of players that that can make special games like host a game for others
+
+### How to give titles to players
+go to your mongodb database page and click on browse Collections
+![Screenshot 2022-01-08 152659](https://user-images.githubusercontent.com/91451271/148640036-7fb953a9-0286-4248-9e05-616ef4c90a2a.png)
+now click on user
+now click edit icon on the players name that you want to add title 
+now add title:"the title you want to give" example title:"AGM"
+now click on update document
+now go to your heroku page and restart all dynos 
+done!
