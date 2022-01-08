@@ -60,3 +60,14 @@ You can also set the server URI in https://gitpod.io/variables . Create a variab
 Example `LIATOMIC_URL`:
 
 `http://8080-amber-reindeer-qu3afegt.ws-eu25.gitpod.io`
+
+### Deploy to Heroku
+
+Create a Heroku app ( in the example we will assume the app name is `atomiconly` ). Then issue the following commands in Heroku CLI to set the necessary buildpacks
+
+```
+heroku buildpacks:set heroku/python --app atomiconly
+heroku buildpacks:add --index 1 heroku/nodejs --app atomiconly
+```
+
+In Heroku UI set config var `URI` to the app url without trailing slash ( `http://atomiconly.herokuapp.com` in our case ) and set `MONGO_HOST` to a MongoDb connect URI that has credentials included.
