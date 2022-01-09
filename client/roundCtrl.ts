@@ -30,7 +30,7 @@ import AnalysisController from "./analysisCtrl";
 
 import { Pos } from "@publishvue/chessopsnpmts"
 
-function isCheck(fen:string){
+function isCheck(fen:string):boolean{
     const pos = Pos().setVariant("atomic").setFen(fen)
     const check = pos.checkedKingUci() !== ""
     console.log(fen, check)
@@ -606,7 +606,10 @@ export default class RoundController {
     // Janggi second player (Red) setup
     private onMsgSetup = (msg: MsgSetup) => {
         this.setupFen = msg.fen;
-        this.chessground.set({fen: this.setupFen});
+        this.chessground.set({
+            fen: this.setupFen,
+            check: isCheck(msg.fen)
+        });
 
         const side = (msg.color === 'white') ? _('Blue (Cho)') : _('Red (Han)');
         const message = _('Waiting for %1 to choose starting positions of the horses and elephants...', side);
@@ -638,7 +641,10 @@ export default class RoundController {
             }
             parts[rank] = left + '1' + right;
             this.setupFen = parts.join('/') + ' w - - 0 1' ;
-            this.chessground.set({fen: this.setupFen});
+            this.chessground.set({
+                fen: this.setupFen,
+                check: isCheck(msg.fen)
+            });
         }
 
         const sendSetup = () => {
@@ -1013,7 +1019,7 @@ export default class RoundController {
                     // giving fen here will place castling rooks to their destination in chess960 variants
                     fen: parts[0],
                     turnColor: this.turnColor,
-                    check: isCheck(parts[0]),
+                    check: isCheck(this.fullfen),
                 });
                 if (this.clockOn && msg.status < 0) {
                     this.clocks[oppclock].start();
