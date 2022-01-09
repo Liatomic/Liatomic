@@ -11,6 +11,9 @@ export default {
         name: "PychessVariants",
         file: "static/pychess-variants.js",
         format: "iife",
+        globals: {
+            child_process: "childprocess",
+        },
     },
     plugins: [
         nodeResolve(),
