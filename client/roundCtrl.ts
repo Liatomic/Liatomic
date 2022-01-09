@@ -28,6 +28,15 @@ import { Clocks, MsgBoard, MsgChat, MsgCtable, MsgFullChat, MsgGameEnd, MsgGameN
 import { PyChessModel } from "./main";
 import AnalysisController from "./analysisCtrl";
 
+import { Pos } from "@publishvue/chessopsnpmts"
+
+function isCheck(fen:string){
+    const pos = Pos().setVariant("atomic").setFen(fen)
+    const check = pos.checkedKingUci() !== ""
+    console.log(fen, check)
+    return check
+}
+
 let rang = false;
 
 interface MsgUserDisconnected {
@@ -962,7 +971,7 @@ export default class RoundController {
                 this.chessground.set({
                     fen: this.fullfen,
                     turnColor: this.turnColor,
-                    check: msg.check,
+                    check: isCheck(this.fullfen),
                     lastMove: lastMove,
                 });
             }
@@ -984,7 +993,7 @@ export default class RoundController {
                             color: this.mycolor,
                             dests: this.dests,
                         },
-                        check: msg.check,
+                        check: isCheck(this.fullfen),
                         lastMove: lastMove,
                     });
 
@@ -1004,7 +1013,7 @@ export default class RoundController {
                     // giving fen here will place castling rooks to their destination in chess960 variants
                     fen: parts[0],
                     turnColor: this.turnColor,
-                    check: msg.check,
+                    check: isCheck(parts[0]),
                 });
                 if (this.clockOn && msg.status < 0) {
                     this.clocks[oppclock].start();
@@ -1037,7 +1046,7 @@ export default class RoundController {
                 color: this.spectator ? undefined : step.turnColor,
                 dests: (this.turnColor === this.mycolor && this.result === "*" && ply === this.steps.length - 1) ? this.dests : undefined,
                 },
-            check: step.check,
+            check: isCheck(step.fen),
             lastMove: move,
         });
         this.fullfen = step.fen;

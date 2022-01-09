@@ -9,7 +9,11 @@ export default {
         file: "static/pychess-variants.js",
         format: "iife",
         sourcemap: "inline",
+        globals: {
+            child_process: "childprocess",
+        },
     },
+    
     plugins: [
         nodeResolve(),
         commonjs(),
