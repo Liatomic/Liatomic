@@ -13,7 +13,7 @@ user.json
 crosstable.json
 highscore.json
 tournament*.json
-yarn.lock
+#yarn.lock
 /*.py
 /*.sh
 !install.sh
