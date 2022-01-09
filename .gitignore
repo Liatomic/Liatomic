@@ -16,12 +16,9 @@ tournament*.json
 yarn.lock
 /*.py
 /*.sh
-!install.sh
-!startserver.sh
 *.pgn
 *.txt
 *.mo
 .env
 yarn-error.log
 .idea/
-
