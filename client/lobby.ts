@@ -927,9 +927,9 @@ export function lobbyView(model: PyChessModel): VNode[] {
   //      h('div#variants-catalog'),
         h('aside.sidebar-second', [ h('div#seekbuttons') ]),
         h('under-left', [
-            h('a.reflist', { attrs: { href: 'https://discord.gg/5m4VyS3U' } }, 'Discord'),
-            h('a.reflist', { attrs: { href: 'https://github.com/raviharav-bot/Liantichess' } }, 'Github'),
-	    h('a.reflist', { attrs: { href: 'https://lichess.org/team/liatomic' } }, 'Lichess Team'), 	
+            h('a.reflist', { attrs: { href: 'https://discord.gg/5m4VyS3U', rel: "noopener noreferrer", target: "_blank" } }, 'Discord'),
+            h('a.reflist', { attrs: { href: 'https://github.com/raviharav-bot/Liantichess', rel: "noopener noreferrer", target: "_blank" } }, 'Github'),
+	    h('a.reflist', { attrs: { href: 'https://lichess.org/team/liatomic', rel: "noopener noreferrer", target: "_blank" } }, 'Lichess Team'), 	
             h('a.reflist', { attrs: { href: '/faq' } }, _("FAQ")),
             h('a.reflist', { attrs: { href: '/stats' } }, _("Stats")),
             h('a.reflist', { attrs: { href: '/about' } }, _("About")),
