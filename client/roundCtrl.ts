@@ -33,7 +33,7 @@ import { Pos } from "@publishvue/chessopsnpmts"
 function isCheck(fen:string):boolean{
     const pos = Pos().setVariant("atomic").setFen(fen)
     const check = pos.checkedKingUci() !== ""
-    console.log(fen, check)
+    //console.log(fen, check)
     return check
 }
 
@@ -545,7 +545,8 @@ export default class RoundController {
 
     private draw = () => {
         // console.log("Draw");
-        if (confirm(_('Are you sure you want to draw?'))) {
+        const doOfferDraw = ( localStorage.getItem("confirmdraw") === "false" ) || confirm(_('Are you sure you want to draw?')) 
+        if (doOfferDraw) {
             this.doSend({ type: "draw", gameId: this.gameId });
             this.setDialog(_("Draw offer sent"));
         }
@@ -1147,6 +1148,21 @@ export default class RoundController {
         return (orig: cg.Key, dest: cg.Key, capturedPiece: cg.Piece) => {
             console.log("   ground.onMove()", orig, dest, capturedPiece);
             sound.moveSound(this.variant, !!capturedPiece);
+
+            const currFen = this.steps[this.steps.length - 1].fen.split(" ").slice(0, 4).join(" ")
+
+            let fenCnt = 0
+
+            for(let i = 0;i<this.steps.length;i++){
+                if(this.steps[i].fen.split(" ").slice(0,4).join(" ") === currFen) fenCnt++
+            }
+
+            //console.log(currFen, "occured", fenCnt)
+
+            if(fenCnt >= 3){
+                console.log("requesting draw on threefold")
+                this.doSend({ type: "draw", gameId: this.gameId });
+            }
         }
     }
 
