@@ -30,7 +30,7 @@ It is the strongest available on this site, but does not represent Fairy-Stockfi
 
 <details><summary>What games are available?</summary>
 
-Check out the [Variants page](https://liantichess.herokuapp.com/variants).</details>
+Check out the [Variants page](https://liatomic.herokuapp.com/variants).</details>
 
 
 ## Interface
