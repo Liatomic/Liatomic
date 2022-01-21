@@ -951,7 +951,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
                             h('strong', "Blog is here"),
                             h('span', 'A new feature in Liatomic'),
                         ]),
-                        h('time', '2022.01.22'),
+                        h('time', '2022.01.21'),
                 
                 ]),
 			/*
