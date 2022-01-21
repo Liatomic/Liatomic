@@ -18,7 +18,7 @@ V2C = {
     "racingkings": "F",
     "antichess": "f",
     "losers": "H",
-    "anti-atomic": "V",
+    "threecheck": "V",
     "makruk": "m",
     "placement": "p",
     "seirawan": "s",
