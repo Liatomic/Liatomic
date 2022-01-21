@@ -301,13 +301,12 @@ export const VARIANTS: { [name: string]: Variant } = {
             chess960: true, icon: "♔", icon960: "♔",
         }),
             
- antiatomic: new Variant({
-            name: "anti-atomic", tooltip: () => _("loose at atomic"),
-            startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  threecheck: new Variant({
+            name: "threecheck", tooltip: () => _("Keep Threechecks."),
+            startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1 +0+0",
             board: "standard8x8", piece: "standard",
             pieceRoles: ["k", "q", "r", "b", "n", "p"],
-            enPassant: true,
-            chess960: true, icon: "♔", icon960: "♔",
+            icon: "♟",
           }),
           
     antichess: new Variant({
