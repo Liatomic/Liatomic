@@ -119,7 +119,8 @@ VARIANT_960_TO_PGN = {
     "crazyhouse": "Crazyhouse",  # to let lichess import work
     "atomic": "Atomic",          # to let lichess import work
     "antichess": "Antichess",          # to let lichess import work    
-    "losers": "Losers960",     
+    "losers": "Losers960",
+    "anti-atomic": "Anti-atomic960",
     "seirawan": "Seirawan960",
     # some early game is accidentally saved as 960 in mongodb
     "shogi": "Shogi",
@@ -130,7 +131,7 @@ VARIANT_960_TO_PGN = {
 }
 
 CATEGORIES = {
-    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antichess", "antichess960"),
+    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antichess", "antichess960", "anti-atomic", "anti-atomic960"),
     "fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
     "army": ("synochess", "shinobi", "empire", "chak"),
     "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
