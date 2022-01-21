@@ -1016,6 +1016,5 @@ export function lobbyView(model: PyChessModel): VNode[] {
                 ]),
                 */ 
             ]),
-        ]),
-    ];
+	];
 }	    
