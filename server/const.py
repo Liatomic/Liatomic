@@ -69,8 +69,8 @@ VARIANT_ICONS = {
     "placement": "S",
     "kingofthehill": "🏳️",
     "racingkings": "♔",
-    "antiatomic": "♔",
-    "antiatomic960": "♔",
+#    "antiatomic": "♔", until tested
+#    "antiatomic960": "♔", until tested
     "losers": "♔",
     "losers960": "♔",
     "threecheck": "♟",
