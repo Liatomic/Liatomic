@@ -44,7 +44,9 @@ CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC
 
 VARIANTS = (
     "atomic",
-    "atomic960"
+    "atomic960",
+    "anti-atomic",
+    "anti-atomic960"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
@@ -95,6 +97,8 @@ VARIANT_ICONS = {
     "crazyhouse960": "%",
     "kyotoshogi": ")",
     "shogun": "-",
+    "anti-atomic": "♔",
+    "anti-atomic960": "♔",
 #    "orda": "R",
     "synochess": "_",
     "hoppelpoppel": "`",
