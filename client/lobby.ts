@@ -927,7 +927,7 @@ export function lobbyView(model: PyChessModel): VNode[] {
   //      h('div#variants-catalog'),
         h('aside.sidebar-second', [ h('div#seekbuttons') ]),
         h('under-left', [
-            h('a.reflist', { attrs: { href: 'https://discord.gg/5m4VyS3U', rel: "noopener noreferrer", target: "_blank" } }, 'Discord'),
+            h('a.reflist', { attrs: { href: 'https://discord.gg/5MMhZeTwea', rel: "noopener noreferrer", target: "_blank" } }, 'Discord'),
             h('a.reflist', { attrs: { href: 'https://github.com/raviharav-bot/Liantichess', rel: "noopener noreferrer", target: "_blank" } }, 'Github'),
 	    h('a.reflist', { attrs: { href: 'https://lichess.org/team/liatomic', rel: "noopener noreferrer", target: "_blank" } }, 'Lichess Team'), 	
             h('a.reflist', { attrs: { href: '/faq' } }, _("FAQ")),
@@ -938,3 +938,84 @@ export function lobbyView(model: PyChessModel): VNode[] {
             h('a', { attrs: { href: '/players' } }, [ h('counter#u_cnt') ]),
             h('a', { attrs: { href: '/games' } }, [ h('counter#g_cnt') ]),
         ]),
+        h('under-lobby', [
+            h('news-latest', [
+                h('icon', { attrs: {"data-icon": '2'} }),
+                h('a.reflist', { attrs: {href: '/news'} }, _("Latest updates")),
+            ]),
+                h('posts', [
+                // TODO: create news documents in mongodb and load latest 3 dinamically here
+                    h('a.post', { attrs: {href: '/news/blog'} }, [
+                        h('img', { attrs: {src: model["asset-url"] + '/images/blog.jpg'} }),
+                        h('span.text', [
+                            h('strong', "Blog is here"),
+                            h('span', 'A new feature in Liatomic'),
+                        ]),
+                        h('time', '2022.01.22'),
+                
+                ]),
+			/*
+                h('a.post', { attrs: {href: '/news/Liantichess'} }, [
+                    h('img', { attrs: {src: model["asset-url"] + '/images/liantichess.png'} }),
+                    h('span.text', [
+                        h('strong', "Liantichess"),
+                        h('span', 'I really appreciate everyone who offered to help, donated, reported a bug or made me aware of some possible improvements.'),
+                    ]),
+                    h('time', '2021.12.17'),
+                ]),
+                h('posts', [
+                    // TODO: create news documents in mongodb and load latest 3 dinamically here
+                    h('a.post', { attrs: {href: '/news/Nookie_wins_the_First_Antichess960_Shield_Arena'} }, [
+                        h('img', { attrs: {src: model["asset-url"] + '/images/titled_arena.png'} }),
+                        h('span.text', [
+                            h('strong', "Nookie wins the First Antichess960 Shield Arena"),
+                            h('span', 'First Antichess960 Shield Arena'),
+                        ]),
+                        h('time', '2021.12.17'),
+                 	    /*   
+                ]),
+                h('a.post', { attrs: {href: '/news/Shinobi_Arrives_in_Time_For_the_Sakura_Blossoms'} }, [
+                    h('img', { attrs: {src: model["asset-url"] + '/icons/shinobi.svg'} }),
+                    h('span.text', [
+                        h('strong', "Shinobi Arrives in Time For the Sakura Blossoms"),
+                        h('span', 'Shinobi Chess has arrived!'),
+                    ]),
+                    h('time', '2021.04.21'),
+                ]),
+                h('a.post', { attrs: {href: '/news/The_Winner_Is_Tasshaq'} }, [
+                    h('img', { attrs: {src: model["asset-url"] + '/icons/Dobutsu.svg'} }),
+                    h('span.text', [
+                        h('strong', "And the winner is Tasshaq"),
+                        h('span', 'Subjective report on 1st Dōbutsu Tournament'),
+                    ]),
+                    h('time', '2021.03.28'),
+                ]),
+                h('a.post', { attrs: {href: '/news/New_Weapons_Arrived'} }, [
+                    h('img', { attrs: {src: model["asset-url"] + '/images/RS-24.jpg'} }),
+                    h('span.text', [
+                        h('strong', "Atomic chess and Atomic960 are here"),
+                        h('span', 'New Weapons Arrived'),
+                    ]),
+                    h('time', '2021.03.03'),
+                ]),
+                h('a.post', { attrs: {href: '/news/Short_History_Of_Pychess'} }, [
+                    h('img', { attrs: {src: model["asset-url"] + '/images/TomatoPlasticSet.svg'} }),
+                    h('span.text', [
+                        h('strong', "And Now for Something Completely Different"),
+                        h('span', 'Short History Of Pychess'),
+                    ]),
+                    h('time', '2021.02.27'),
+                ]),
+                h('a.post', { attrs: {href: '/news/Dobutsu_Tournament'} }, [
+                    h('img', { attrs: {src: model["asset-url"] + '/icons/Dobutsu.svg'} }),
+                    h('span.text', [
+                        h('strong', "PyChess tournament announcement"),
+                        h('span', 'The 1st Dōbutsu Tournament on PyChess'),
+                    ]),
+                    h('time', '2021.02.04'),
+                ]),
+                */ 
+            ]),
+        ]),
+    ];
+}	    
