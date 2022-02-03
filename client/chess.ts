@@ -318,6 +318,16 @@ export const VARIANTS: { [name: string]: Variant } = {
         enPassant: true,
         chess960: true, icon: "♔", icon960: "♔",
     }),
+
+    atomiczh: new Variant({
+      name: "atomiczh", tooltip: () => _("antichess + crazyhouse."),
+      startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      board: "standard8x8", piece: "standard",
+      pieceRoles: ["k", "q", "r", "b", "n", "p"],
+      pocketRoles: ["p", "n", "b", "r", "q"],
+      enPassant: true, drop: true,
+      chess960: true, icon: "♔", icon960: "♔",
+    }),    
     
     racingkings: new Variant({
       name: "racingkings", tooltip: () => _("Bring your king to other side."),
@@ -762,7 +772,7 @@ export const enabledVariants = variants.filter(v => !disabledVariants.includes(v
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
 
-    standard: { variants: [ "atomic", "antiatomic"] },
+    standard: { variants: [ "atomic", "antiatomic", "atomiczh"] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     //shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi" ] },
     //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
