@@ -15,7 +15,7 @@ V2C = {
     "crazyhouse": "h",
     "atomic": "A",
     "atomiczh": "L",
-    "racingkings": "F",
+    "atomicrk": "F",
     "antiatomic": "f",
     "losers": "H",
     "threecheck": "V",
