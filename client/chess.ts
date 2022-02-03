@@ -320,22 +320,22 @@ export const VARIANTS: { [name: string]: Variant } = {
     }),
 
     atomiczh: new Variant({
-      name: "atomiczh", tooltip: () => _("antichess + crazyhouse."),
+      name: "atomiczh", tooltip: () => _("atomic + crazyhouse."),
       startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       board: "standard8x8", piece: "standard",
       pieceRoles: ["k", "q", "r", "b", "n", "p"],
       pocketRoles: ["p", "n", "b", "r", "q"],
       enPassant: true, drop: true,
-      chess960: true, icon: "♔", icon960: "♔",
+      chess960: true, icon: "+", icon960: "%",
     }),    
 
     atomicrk: new Variant({
-        name: "atomicrk", tooltip: () => _("AntiRacingkings."),
+        name: "atomicrk", tooltip: () => _("AtomiRacingkings."),
         startFen: "8/8/8/8/8/8/krbnNBRK/qrbnNBRQ w - - 0 1",
         board: "standard8x8", piece: "standard",
         pieceRoles: ["k", "q", "r", "b", "n", "p"],
         enPassant: true,
-        icon: "♔",
+        icon: "🏳️",
     }),    
     
     racingkings: new Variant({
