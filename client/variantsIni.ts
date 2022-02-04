@@ -11,6 +11,7 @@ pocketSize = 6
 castling = false
 
 [atomicrk:atomic]
+startFen = 8/8/8/8/8/8/krbnNBRK/qrbnNBRQ w - - 0 1
 flagPiece = k
 whiteFlag = *8
 flagMove = true
