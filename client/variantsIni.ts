@@ -4,8 +4,15 @@ export const variantsIni = `
 blastOnCapture = true
 
 # Hybrid of atomic and zh. Zh is th base variant.
-[atomiczh:crazyhouse]
-blastOnCapture = true
+[atomiczh:atomic]
+pieceDrops = true
+capturesToHand = true
+pocketSize = 6
+castling = false
 
-[atomicrk:racingkings]
-blastOnCapture = true`
+[atomicrk:atomic]
+flagPiece = k
+whiteFlag = *8
+flagMove = true
+castling = false
+checking = false
