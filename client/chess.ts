@@ -285,7 +285,7 @@ export const VARIANTS: { [name: string]: Variant } = {
     
     epicatomic: new Variant({
         name: "epicatomic", tooltip: () => _("atomic but epic"),
-        startFen: "rbnbqkbnbr/bbrrpprrbb/pppppppppp/10/10/10/10/PPPPPPPPPP/BBRRPPRRBB/RRNNQKNNRR w KQkq - 0 1",
+        startFen: "rbnbqkbnbr/bbrrpprrbb/pppppppppp/10/10/10/10/PPPPPPPPPP/BBRRPPRRBB/RBNBQKBNBR w KQkq - 0 1",
         board: "standard10x10", piece: "standard",
         pieceRoles: ["k", "q", "r", "b", "n", "p"],
         enPassant: false,
