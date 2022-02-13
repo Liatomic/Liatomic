@@ -288,7 +288,7 @@ export const VARIANTS: { [name: string]: Variant } = {
         startFen: "rrrrqkrrrr/bbbbppbbbb/nnnnppnnnn/pppppppppp/10/10/10/10/PPPPPPPPPP/NNNNPPNNNN/BBBBPPBBBB/RRRRQKRRRR w KQkq - 0 1",
         board: "standard10x10", piece: "standard",
         pieceRoles: ["k", "q", "r", "b", "n", "p"],
-        enPassant: true,
+        enPassant: false,
         pieceSound: "atomic",
         chess960: false, icon: "~",
     }),
@@ -791,7 +791,7 @@ export const enabledVariants = variants.filter(v => !disabledVariants.includes(v
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
 
-    standard: { variants: [ "atomic", "antiatomic", "atomiczh", "atomicrk"] },
+    standard: { variants: [ "atomic", "antiatomic", "atomiczh", "atomicrk", "epicatomic"] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     //shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi" ] },
     //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
