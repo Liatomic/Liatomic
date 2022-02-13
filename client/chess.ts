@@ -283,6 +283,16 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "~", icon960: "\\",
     }),
     
+    epicatomic: new Variant({
+        name: "epicatomic", tooltip: () => _("atomic but epic"),
+        startFen: "rrrrqkrrrr/bbbbppbbbb/nnnnppnnnn/pppppppppp/10/10/10/10/PPPPPPPPPP/NNNNPPNNNN/BBBBPPBBBB/RRRRQKRRRR w KQkq - 0 1",
+        board: "standard10x10", piece: "standard",
+        pieceRoles: ["k", "q", "r", "b", "n", "p"],
+        enPassant: true,
+        pieceSound: "atomic",
+        chess960: false, icon: "~",
+    }),
+    
     kingofthehill: new Variant({
             name: "kingofthehill", tooltip: () => _("bring king to center."),
             startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
