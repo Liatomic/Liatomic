@@ -126,7 +126,7 @@ VARIANT_960_TO_PGN = {
     "losers": "Losers960",
     "atomiczh": "Atomiczh960",
     "seirawan": "Seirawan960",
-    "epicatomic": "Epicatomic"
+    "epicatomic": "Epicatomic",
     # some early game is accidentally saved as 960 in mongodb
     "shogi": "Shogi",
     "sittuyin": "Sittuyin",
