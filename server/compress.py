@@ -51,6 +51,7 @@ V2C = {
     "torishogi": "T",
     "asean": "S",
     "chak": "C",
+    "epicatomic": "R",
 }
 C2V = {v: k for k, v in V2C.items()}
 
