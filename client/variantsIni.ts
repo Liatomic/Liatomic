@@ -10,7 +10,7 @@ capturesToHand = true
 pocketSize = 6
 castling = false
 
-[epicatomic:atomic]
+[epicatomic]
 king = k
 queen = q
 bishop = b
@@ -18,10 +18,16 @@ knight = n
 rook = r
 pawn = p
 variantTemplate = atomic
-promotionPieceTypes = nbrq
+promotionPieceTypes = b
 blastOnCapture = true
 castling = false
-startFen = rbnbqkbnbr/bbrrpprrbb/pppppppppp/10/10/10/10/PPPPPPPPPP/BBRRPPRRBB/RBNBQKBNBR w KQkq - 0 1
+startFen = rnnrqkrnnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNNRQKRNNR w KQkq - 0 1
+maxRank = 10
+maxFile = 10
+chess960 = false
+promotionRank = 8
+doubleStep = true
+castling = false
 
 [atomicrk:atomic]
 startFen = 8/8/8/8/8/8/krbnNBRK/qrbnNBRQ w - - 0 1
