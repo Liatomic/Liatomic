@@ -48,8 +48,7 @@ VARIANTS = (
     "antiatomic",
     "antiatomic960",
     "atomiczh",
-    "atomiczh960",  
-    "epicatomic"
+    "atomiczh960"    
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
@@ -113,7 +112,6 @@ VARIANT_ICONS = {
 #    "ordamirror": "◩",
     "asean": "♻",
     "chak": "🐬",
-    "epicatomic": "~"
 }
 
 VARIANT_960_TO_PGN = {
@@ -126,7 +124,6 @@ VARIANT_960_TO_PGN = {
     "losers": "Losers960",
     "atomiczh": "Atomiczh960",
     "seirawan": "Seirawan960",
-    "epicatomic": "Epicatomic",
     # some early game is accidentally saved as 960 in mongodb
     "shogi": "Shogi",
     "sittuyin": "Sittuyin",
@@ -136,7 +133,7 @@ VARIANT_960_TO_PGN = {
 }
 
 CATEGORIES = {
-    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antiatomic", "antiatomic", "atomiczh", "atomiczh960", "atomicrk", "epicatomic"),
+    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antiatomic", "antiatomic", "atomiczh", "atomiczh960", "atomicrk"),
     "fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
     "army": ("synochess", "shinobi", "empire", "chak"),
     "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
