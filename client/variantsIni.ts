@@ -10,14 +10,14 @@ capturesToHand = true
 pocketSize = 6
 castling = false
 
-[epicatomic]
+[epicatomic:atomic]
+variantTemplate = atomic
 king = k
 queen = q
 bishop = b
 knight = n
 rook = r
 pawn = p
-variantTemplate = atomic
 promotionPieceTypes = b
 blastOnCapture = true
 castling = false
