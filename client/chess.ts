@@ -283,16 +283,6 @@ export const VARIANTS: { [name: string]: Variant } = {
         chess960: true, icon: "~", icon960: "\\",
     }),
     
-    epicatomic: new Variant({
-        name: "epicatomic", tooltip: () => _("atomic but epic"),
-        startFen: "rnnbqkbnnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNNBQKBNNR[] w KQkq - 0 1",
-        board: "standard10x8", piece: "standard",
-        pieceRoles: ["k", "q", "r", "b", "n", "p"],
-        enPassant: false,
-        pieceSound: "atomic",
-        chess960: false, icon: "~",
-    }),
-    
     kingofthehill: new Variant({
             name: "kingofthehill", tooltip: () => _("bring king to center."),
             startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -791,7 +781,7 @@ export const enabledVariants = variants.filter(v => !disabledVariants.includes(v
 
 const variantGroups: { [ key: string ]: { variants: string[] } } = {
 
-    standard: { variants: [ "atomic", "antiatomic", "atomiczh", "atomicrk", "epicatomic"] },
+    standard: { variants: [ "atomic", "antiatomic", "atomiczh", "atomicrk"] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
     //shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi" ] },
     //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
