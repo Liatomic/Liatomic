@@ -50,6 +50,7 @@ VARIANTS = (
     "atomiczh",
     "atomiczh960",  
     "epicatomic"
+    "atomicshogi"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
@@ -65,6 +66,7 @@ VARIANT_ICONS = {
     "makpong": "O",
     "sittuyin": ":",
     "shogi": "K",
+    "atomicshogi":"K"
     "janggi": "=",
     "xiangqi": "|",
     "chess": "M",
@@ -127,6 +129,7 @@ VARIANT_960_TO_PGN = {
     "atomiczh": "Atomiczh960",
     "seirawan": "Seirawan960",
     "epicatomic": "Epicatomic",
+    "atomicshogi":"Atomicshogi",
     # some early game is accidentally saved as 960 in mongodb
     "shogi": "Shogi",
     "sittuyin": "Sittuyin",
@@ -140,7 +143,7 @@ CATEGORIES = {
     "fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
     "army": ("synochess", "shinobi", "empire", "chak"),
     "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
-    "shogi": ("shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi"),
+    "shogi": ("shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi","atomicshogi"),
     "xiangqi": ("xiangqi", "manchu", "janggi", "minixiangqi"),
 }
 
