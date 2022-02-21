@@ -35,4 +35,7 @@ flagPiece = k
 whiteFlag = *8
 flagMove = true
 castling = false
-checking = false`
+checking = false
+
+[atomicshogi]
+variantTemplate = atomic`
