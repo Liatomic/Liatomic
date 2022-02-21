@@ -66,7 +66,7 @@ VARIANT_ICONS = {
     "makpong": "O",
     "sittuyin": ":",
     "shogi": "K",
-    "atomicshogi":"K"
+    "atomicshogi":"K",
     "janggi": "=",
     "xiangqi": "|",
     "chess": "M",
