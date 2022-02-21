@@ -49,7 +49,7 @@ VARIANTS = (
     "antiatomic960",
     "atomiczh",
     "atomiczh960",  
-    "epicatomic"
+    "epicatomic",
     "atomicshogi"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
