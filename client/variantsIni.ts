@@ -38,4 +38,5 @@ castling = false
 checking = false
 
 [atomicshogi]
-variantTemplate = atomic`
+variantTemplate = shogi
+blastOnCapture = true`
