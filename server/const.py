@@ -50,7 +50,8 @@ VARIANTS = (
     "atomiczh",
     "atomiczh960",  
     "epicatomic",
-    "atomicshogi"
+    "atomicshogi",
+    "atomar"
     # We support to import/store/analyze these variants
     # but don't support to add them to leaderboard page
     # "gothic",
@@ -110,6 +111,8 @@ VARIANT_ICONS = {
     "manchu": "{",
     "atomic": "~",
     "atomic960": "\\",
+    "atomar": "~",
+    "atomar960": "\\",
     "shinobi": "🐢",
     "empire": "♚",
 #    "ordamirror": "◩",
@@ -124,6 +127,7 @@ VARIANT_960_TO_PGN = {
     "capahouse": "Capahouse960",
     "crazyhouse": "Crazyhouse",  # to let lichess import work
     "atomic": "Atomic",          # to let lichess import work
+    "atomar": "Atomar960",
     "antiatomic": "Antiatomic960",          # to let lichess import work    
     "losers": "Losers960",
     "atomiczh": "Atomiczh960",
@@ -139,11 +143,11 @@ VARIANT_960_TO_PGN = {
 }
 
 CATEGORIES = {
-    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antiatomic", "antiatomic", "atomiczh", "atomiczh960", "atomicrk", "epicatomic"),
+    "chess": ("chess", "chess960", "crazyhouse", "crazyhouse960", "placement", "atomic", "atomic960", "antiatomic", "antiatomic", "atomiczh", "atomiczh960", "atomicrk", "epicatomic", "atomar"),
     "fairy": ("capablanca", "capablanca960", "capahouse", "capahouse960", "seirawan", "seirawan960", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel"),
     "army": ("synochess", "shinobi", "empire", "chak"),
     "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
-    "shogi": ("shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi","atomicshogi"),
+    "shogi": ("shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoro", "torishogi"),
     "xiangqi": ("xiangqi", "manchu", "janggi", "minixiangqi"),
 }
 
