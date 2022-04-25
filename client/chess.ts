@@ -813,7 +813,7 @@ function variantGroupLabel(group: string): string {
     const groups: {[index: string]: string} = {
         standard: _("Chess Variants"),
         //sea: _("Makruk Variants"),
-        shogi: _("Shogi Variants"),
+        //shogi: _("Shogi Variants"),
         //xiangqi: _("Xiangqi Variants"),
         //fairy: _("Fairy Piece Variants"),
         //army: _("New Army Variants"),
