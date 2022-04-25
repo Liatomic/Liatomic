@@ -17,7 +17,7 @@ V2C = {
     "atomiczh": "L",
     "atomicrk": "F",
     "antiatomic": "f",
-    "losers": "H",
+    "atomar": "H",
     "threecheck": "V",
     "makruk": "m",
     "placement": "p",
